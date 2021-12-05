@@ -1,36 +1,85 @@
-.lightgray{
-    color: #eee;
-    opacity: .5;
-}
-.indigo{
-    color: indigo;
-}
-.lightindigo{
-    color: rgb(204, 136, 252);
-
-}
-.name{
+.portfolio{
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 30px !important;
     font-weight: bolder;
-    letter-spacing: .33em;
+    color: #6e3607 !important;
 }
-#home{
-    background-color: indigo;
-    height: 60vh;
-}
-#home button{
-    background-color: #eee !important;
-    color: indigo;
-    border-color: indigo;
-    transition: .3s ease-in;
-}
-#home button:hover{
-    background-color: #eee !important;
-    color: indigo;
-}
-.banner{  
+.banner{
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 30%;
+    transform: translate(-30%, -50%);
     padding-left: 20px;
 }
+#home{
+    background-color: #ffe0d4;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom right;
+    height: 89vh;
+}
+.name{
+    font-weight:900;
+    color:rgb(247, 103, 115);
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 50px;
+}
+#home button{
+    background-color: rgb(248, 170, 177) !important;
+    border-color: #6e3607 !important;
+    border-radius: 20px;
+    transition: .3s ease-in;
+    width: 180px;
+}
+#home button:hover,
+#home button:focus{
+    background-color: transparent !important;
+    border-color: rgb(247, 103, 115) !important;
+}
+#home button a{
+    color: #422004 !important;
+    font-weight: 600;
+}
+
+/*** MEDIA QUERIES - Mobile first approach ***/
+
+/* Medium Display */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    #home{
+        background-size: 80%;
+    }
+}
+
+/* Large Display */
+@media only screen and (min-width: 992px) and (max-width: 1999px){
+    #home{
+        background-size: 70%;
+    }
+    .banner{
+        padding-left: 80px;
+    }
+}
+
+/* XL Display */
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    #home{
+        background-size: 60%;
+    }
+    .banner{
+        top: 40%;
+        padding-left: 80px;
+    }
+}
+
+/* XXL Display */
+@media only screen and (min-width: 1400px){
+    #home{
+        background-size: 60%;
+    }
+    .banner{
+        top: 40%;
+        padding-left: 250px;
+    }
+}
+
+

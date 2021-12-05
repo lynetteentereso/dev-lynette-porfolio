@@ -1,0 +1,39 @@
+#about{
+    width: 80%;
+    margin: auto;
+}
+#about img{
+    width: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    max-width: 580px;
+    margin: 0 auto 4em;
+}
+#about h2{
+   padding-top: 80px;
+   padding-bottom: 50px;
+}
+.skills{
+    padding-bottom: 50px;
+}
+.about-photo{
+    display:none;
+}
+.col-container{
+    padding: 0 5px;
+}
+
+
+/*** MEDIA QUERIES - Mobile first approach ***/
+
+/* Medium to XXL Display */
+@media only screen and (min-width: 768px){
+    .about-photo{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    .col-container{
+        padding: 0 35px;
+    }
+}

@@ -1,0 +1,42 @@
+#works{
+    margin-bottom: 50px;
+}
+#works .cards{
+    margin-top: 50px !important;
+}
+#works .card{
+    margin: auto;
+    border-radius: 20px !important;
+    border-color: rgba(247, 103, 115, .5) !important;
+    transition: .3s ease-in;
+}
+#works .card:hover{
+    transform: scale(1.1)
+}
+#works .card button{
+    margin-top: 20px;
+    background-color: rgb(248, 170, 177) !important;
+    border-color: #6e3607 !important;
+    color: #422004 !important;
+    transition: .3s ease-in;
+    border-radius: 20px;
+    width: 150px !important;
+}
+#works .card button a,
+#works .card button a:hover{
+    color: #422004 !important;
+}
+#works .card button:hover,
+#works .card buttont:focus{
+    background-color: transparent !important;
+    border-color: rgb(247, 103, 115) !important;
+}
+#works .card img{
+    border-radius: 20px 20px 0 0;
+}
+#works .card-title{
+    color: #422004 !important;
+}
+#works h2{
+    padding-top: 80px;
+}

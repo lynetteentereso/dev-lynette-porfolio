@@ -1,0 +1,9 @@
+footer a, li{
+    color: gray !important;
+}
+footer a:hover{
+    color: #000 !important;
+}
+footer p{
+    line-height: 8px;
+}

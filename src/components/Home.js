@@ -1,22 +1,22 @@
 import React from 'react';
 import {Button} from 'react-bootstrap';
 import './home.css';
-import background from '../../src/img/laptop-bg.jpg';
+import Background from '../img/girl-sitting-and-coding.png';
 
 const Home = () => {
     return (
         <>
-            <section id='home' 
+            <section id='home'
             style={{
-                backgroundImage:`url(${background})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'right center',
-                }}>
-                <div className="banner" >
-                    <h6 className="lightgray">HEY THERE!</h6>
-                    <h1 className="indigo name">I AM LYNETTE</h1>
-                    <h4 className="lightgray">FULL-STACK WEB DEVELOPER</h4>
-                    <Button>Get in touch</Button>
+                backgroundImage:`url(${Background})`
+                }} 
+            >
+                <div className="banner">
+                    <h6>Hey there!</h6>
+                    <h3>I'm <span className='name'>Lynette</span></h3>
+                    <h5>A Full-stack Web Developer</h5>
+                    <Button><a href="#works">View my work &#8594;</a></Button>
+                    
                 </div>
             </section>
         </>

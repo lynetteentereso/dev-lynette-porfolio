@@ -1,31 +1,61 @@
-import React from 'react';
-import { Form } from 'react-bootstrap';
-import './contact.css'
+import React, {useRef , useState} from 'react';
+import { Row, Container} from 'react-bootstrap';
+import './contact.css';
+import { ReactComponent as ContactPhoto } from '../img/contact-photo.svg';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const form = useRef();
+    const [msg,setMsg] = useState('');
+    const [isSent, setIsSent] = useState('');
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_7diq7oa', 'template_rllsnxb', e.target, 'user_IeR8NsezIqTGAcZveWXY8')
+      .then((result) => {
+          setIsSent(true);
+          setMsg('Message sent. I will get back to you soon!');
+      }, (error) => {
+          setIsSent(false)
+          setMsg('Message not sent. Please try again later.');
+      });
+      e.target.reset();
+      setMsg('');
+      setIsSent('');
+
+    }
     return (
-        
-        <div className="contact">
-            <h1>Get in touch. </h1>
-            <Form className='contact-form'>
-                <Form.Group className="mb-3">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control type="email" />
-                </Form.Group>
-                <Form.Group required className="mb-3">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Label>Contact Number</Form.Label>
-                    <Form.Control type="email" />
-                </Form.Group>
-                <Form.Group required className="mb-3">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-            </Form>
-        </div>
+       <> 
+        <section id='contact'>
+             <h2 className="text-center"><span className='bracket'>&#8249;</span>Contact<span className='bracket'> &#8260;&#8250;</span></h2>
+            <Container className="container-fluid">
+                <Row>
+                    <ContactPhoto alt='Girl Programmer with Clients' className='img-fluid'/>
+                </Row>
+                <Row>
+                    <h4 className='text-center mb-5'>Want to work together? Let's talk!</h4>
+                </Row>
+                <Container className='d-flex justify-content-center container-fluid'>
+                <form ref={form} onSubmit={sendEmail} className='form'>
+                    <label>Name</label> <br/>
+                    <input required type="text" name="name" /> <br/>
+                    <label>Email Address</label> <br/>
+                    <input required type="email" name="email" /> <br/>
+                    <label>Subject</label> <br/>
+                    <input required type="text" name="subject" /> <br/>
+                    <label>Message</label> <br/>
+                    <textarea required name="message" /> <br/>
+                    <input className="submit" type="submit" value="Send Message" />
+                </form>
+                </Container >
+                <Row className='text-center'>
+                    {
+                       isSent ? <p style={{color:'green'}}>{msg}</p> : <p style={{color:'red'}}>{msg}</p>
+                    }
+                </Row>
+            </Container>
+        </section>
+      </>  
     );
 };
 
