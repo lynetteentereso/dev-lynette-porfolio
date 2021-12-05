@@ -41,7 +41,7 @@ const Works = () => {
                         <Card.Text>
                         ReactJS
                         </Card.Text>
-                        <Button variant="primary">Live View</Button>
+                        <Button variant="primary"><a href="https://lynette-todo-app.herokuapp.com/" target="_blank">Live View</a></Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '30rem' }} className='mt-4 mb-4 card'>
@@ -61,7 +61,7 @@ const Works = () => {
                         <Card.Text>
                         HTML, CSS, JavaScript
                         </Card.Text>
-                        <Button variant="primary">Live View</Button>
+                        <Button variant="primary"><a href="https://lynette-emoji-memory-game.herokuapp.com/" target="_blank">Live View</a></Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '30rem' }} className='mt-4 mb-4 card'>
