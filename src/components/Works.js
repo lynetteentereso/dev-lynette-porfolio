@@ -3,8 +3,9 @@ import {Card, Button, Container} from 'react-bootstrap';
 import './works.css';
 import StaticWebsite from '../img/static-website.png';
 import EmojiMemoryGame from '../img/emoji-memory-game.png'; 
-import Todo from '../img/todo-app.png'
-import ComingSoon from '../img/coming-soon.png'
+import Todo from '../img/todo-app.png';
+import Pokedex from '../img/pokedex.png';
+import ComingSoon from '../img/coming-soon.png';
 
 const Works = () => {
     return (
@@ -45,13 +46,13 @@ const Works = () => {
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '30rem' }} className='mt-4 mb-4 card'>
-                    <Card.Img variant="top" src={ComingSoon} alt='Coming Soon' />
+                    <Card.Img variant="top" src={Pokedex} alt='Pokedex' />
                     <Card.Body>
                         <Card.Title>Pokedex</Card.Title>
                         <Card.Text>
                         ReactJS
                         </Card.Text>
-                        <Button variant="primary">Live View</Button>
+                        <Button variant="primary"><a href="https://lynette-pokedex.herokuapp.com/" target="_blank">Live View</a></Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '30rem' }} className='mt-4 mb-4 card'>
