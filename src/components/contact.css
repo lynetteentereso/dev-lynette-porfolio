@@ -31,6 +31,7 @@
     border-radius: 10px;
     border-color: rgb(247, 103, 115);
     border-width: 1px;
+    padding: 10px;
 }
 .form textarea{
     height: 200px;

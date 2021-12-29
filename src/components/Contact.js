@@ -10,10 +10,10 @@ const Contact = () => {
     const [isSent, setIsSent] = useState('');
     const sendEmail = (e) => {
         e.preventDefault();
-
+       
         emailjs.sendForm('service_7diq7oa', 'template_rllsnxb', e.target, 'user_IeR8NsezIqTGAcZveWXY8')
       .then((result) => {
-          setIsSent(true);
+        setIsSent(true);
           setMsg('Message sent. I will get back to you soon!');
       }, (error) => {
           setIsSent(false)
@@ -41,8 +41,6 @@ const Contact = () => {
                     <input required type="text" name="name" /> <br/>
                     <label>Email Address</label> <br/>
                     <input required type="email" name="email" /> <br/>
-                    <label>Subject</label> <br/>
-                    <input required type="text" name="subject" /> <br/>
                     <label>Message</label> <br/>
                     <textarea required name="message" /> <br/>
                     <input className="submit" type="submit" value="Send Message" />

@@ -15,7 +15,9 @@ const Home = () => {
                     <h6>Hey there!</h6>
                     <h3>I'm <span className='name'>Lynette</span></h3>
                     <h5>A Full-stack Web Developer</h5>
-                    <Button><a href="#works">View my work &#8594;</a></Button>
+                    <h5>and a Seasoned Virtual Assistant</h5>
+                    <p>3 things I love: family, problem-solving, good movie.</p>
+                    <Button><a href="#about">Learn more &#8594;</a></Button>
                     
                 </div>
             </section>

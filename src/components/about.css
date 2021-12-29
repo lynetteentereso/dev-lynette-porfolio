@@ -3,11 +3,11 @@
     margin: auto;
 }
 #about img{
-    width: 80%;
+    width: 80px;
     overflow: hidden;
     border-radius: 20px;
     max-width: 580px;
-    margin: 0 auto 4em;
+    margin: auto;
 }
 #about h2{
    padding-top: 80px;
@@ -30,7 +30,7 @@
 @media only screen and (min-width: 768px){
     .about-photo{
         display: block;
-        width: 80%;
+        width: 100px;
         margin: auto;
     }
     .col-container{
