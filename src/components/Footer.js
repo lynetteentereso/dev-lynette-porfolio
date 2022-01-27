@@ -24,7 +24,6 @@ const Footer = () => {
                                 <li><a href="https://www.linkedin.com/in/lynetteentereso/" target="_blank">LinkedIn</a></li>
                                 <li><a href="https://www.upwork.com/freelancers/~0194c163d4f0f7677b" target="_blank">Upwork</a></li>
                                 <li><a href="https://github.com/lynetteentereso/" target="_blank">GitHub</a></li>
-                                <li><a href="https://drive.google.com/file/d/1w1IW0Aaj_gxWhb95wb2wrmREoQv2NDKF/view?usp=sharing" target="_blank">My Resume</a></li>
                             </ul>
                         </div>
 
